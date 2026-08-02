@@ -1,0 +1,35 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/voquill/voquill/releases
+description: >-
+  Voquill publishes no standalone dated changelog page; releases are tagged
+  per component on GitHub Releases (desktop, desktop-dev, desktop-enterprise,
+  desktop-enterprise-dev), with stable desktop builds marked as full releases
+  and dev/enterprise-dev builds as prereleases. Recent window captured at
+  fetch time; the GitHub Releases page is the source of truth.
+scheme: per-component tags (component-vMAJOR.MINOR.PATCH) on GitHub Releases
+current:
+  desktop: 0.0.650
+  desktop-enterprise: 0.0.3
+entries:
+  - version: desktop-v0.0.650
+    date: '2026-07-13'
+    prerelease: false
+  - version: desktop-enterprise-dev-v0.0.36
+    date: '2026-07-13'
+    prerelease: true
+  - version: desktop-dev-v0.0.650
+    date: '2026-07-13'
+    prerelease: true
+  - version: desktop-enterprise-dev-v0.0.33
+    date: '2026-06-05'
+    prerelease: true
+  - version: desktop-dev-v0.0.647
+    date: '2026-06-05'
+    prerelease: true
+  - version: desktop-v0.0.644
+    date: '2026-05-22'
+    prerelease: false
+  - version: desktop-enterprise-v0.0.3
+    date: '2026-05-12'
+    prerelease: true

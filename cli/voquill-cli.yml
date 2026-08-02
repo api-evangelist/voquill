@@ -1,0 +1,44 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/voquill/voquill/tree/main/cli
+description: >-
+  The Voquill CLI — a first-party Rust CLI that ships three binaries, one per
+  backend environment (voquill → voquill-prod Firebase project, voquill-dev
+  and voquill-emulator → voquill-dev). Credentials are written per-environment
+  to ~/.config/voquill/<env>.json (mode 0600 on Unix). Released builds are
+  published to GitHub Releases and mirrored to the first-party Homebrew tap,
+  APT, and RPM repositories (catalogued in packages/voquill-packages.yml).
+repo: https://github.com/voquill/voquill/tree/main/cli
+binaries:
+  - name: voquill
+    backend: voquill-prod
+    default_site: https://voquill.com
+  - name: voquill-dev
+    backend: voquill-dev
+    default_site: http://localhost:4321
+  - name: voquill-emulator
+    backend: voquill-dev + Auth emulator on 127.0.0.1:9099
+    default_site: http://localhost:4321
+install:
+  shell: curl -fsSL https://voquill.com/install.sh | sh
+  powershell: iwr https://voquill.com/install.ps1 -UseBasicParsing | iex
+  homebrew: brew tap voquill/voquill && brew install voquill
+  apt: apt install voquill (via https://voquill.github.io/apt/ repo + GPG key)
+  rpm: dnf install voquill (via first-party RPM repo)
+  version_pinning: "install.sh accepts --version X.Y.Z; --dev installs the voquill-dev build"
+commands:
+  auth:
+    - name: login
+      description: Sign in to the Voquill backend; persists credentials to ~/.config/voquill/<env>.json.
+    - name: logout
+      description: Remove stored credentials for the environment.
+  sessions:
+    - name: agent
+      description: >-
+        Run a command inside a Voquill-managed PTY session (usage: voquill
+        session <command> [args...]); names the session (random or --slug) and
+        streams it through the Firebase Realtime Database backend so it can be
+        driven by voice from other Voquill surfaces.
+  maintenance:
+    - name: upgrade
+      description: Upgrade the CLI to the latest released build.

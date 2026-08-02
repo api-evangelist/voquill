@@ -1,8 +1,29 @@
 aid: voquill
 name: Voquill
-description: Voquill is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Voquill is a Y Combinator-backed company building open-source, privacy-first
+  AI voice interfaces. Its flagship product is a cross-platform AI voice
+  dictation app (macOS, Windows, Linux, iOS, Android) that supports local
+  on-device Whisper transcription, bring-your-own API keys, Voquill Cloud, and
+  self-hosted / on-premise enterprise deployments with OIDC SSO, and the
+  company also builds a realtime AI scribe for pathologists that turns voice
+  dictation into signed-off pathology reports inside existing LIS/IMS systems.
+  The desktop app, enterprise gateway, admin portal, mobile app, and CLI are
+  all developed in the open under AGPLv3 at github.com/voquill/voquill; there
+  is currently no public developer API.
 url: https://raw.githubusercontent.com/api-evangelist/voquill/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/258637887?v=4
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,12 +32,62 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Voice
+- Dictation
+- Speech-to-Text
+- AI
+- Open Source
+- Healthcare
+- Pathology
+- Productivity
 apis: []
+common:
+- type: DomainSecurity
+  url: security/voquill-domain-security.yml
+- type: Website
+  url: https://voquill.com/
+- type: Documentation
+  url: https://docs.voquill.com/
+- type: GettingStarted
+  url: https://docs.voquill.com/getting-started/
+- type: Blog
+  url: https://voquill.com/blog/
+- type: GitHubOrganization
+  url: https://github.com/voquill
+- type: Support
+  url: https://voquill.com/contact/
+- type: Pricing
+  url: https://voquill.com/dictation/
+- type: SignUp
+  url: https://app.voquill.com/
+- type: Download
+  url: https://voquill.com/download/
+- type: TermsOfService
+  url: https://voquill.com/terms/
+- type: PrivacyPolicy
+  url: https://voquill.com/privacy/
+- type: LLMsTxt
+  url: llms/voquill-llms.txt
+- type: Packages
+  url: packages/voquill-packages.yml
+- type: WellKnown
+  url: well-known/voquill-well-known.yml
+- type: CLI
+  url: cli/voquill-cli.yml
+- type: ChangeLog
+  url: changelog/voquill-changelog.yml
+- type: AgentSkill
+  url: skills/_index.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 7
+  pass: local-v1

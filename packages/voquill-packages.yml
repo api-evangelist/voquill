@@ -1,0 +1,93 @@
+generated: '2026-07-21'
+method: searched
+source: https://registry.npmjs.org/-/v1/search?text=voquill
+description: >-
+  First-party Voquill packages and distribution channels, verified against the
+  public registries at fetch time. The npm @voquill scope carries the shared
+  monorepo libraries published by the project's GitHub Actions release
+  pipeline (version 0.3.25 at fetch); they are supporting libraries for the
+  open-source desktop/mobile apps rather than client SDKs for a public API —
+  Voquill publishes no public developer API, so no API client SDKs exist. The
+  desktop app and CLI binaries are distributed via GitHub Releases and
+  mirrored to first-party Homebrew, APT, and RPM repositories plus shell
+  installers (https://voquill.com/install.sh, /install.ps1).
+packages:
+  - language: javascript
+    registry: npm
+    name: "@voquill/voice-ai"
+    url: https://www.npmjs.com/package/@voquill/voice-ai
+    install: npm install @voquill/voice-ai
+    description: Shared Groq voice transcription helpers
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@voquill/types"
+    url: https://www.npmjs.com/package/@voquill/types
+    install: npm install @voquill/types
+    description: Shared type definitions for the Voquill monorepo
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@voquill/functions"
+    url: https://www.npmjs.com/package/@voquill/functions
+    install: npm install @voquill/functions
+    description: Shared Firebase functions package
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@voquill/firemix"
+    url: https://www.npmjs.com/package/@voquill/firemix
+    install: npm install @voquill/firemix
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@voquill/utilities"
+    url: https://www.npmjs.com/package/@voquill/utilities
+    install: npm install @voquill/utilities
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@voquill/desktop-utils"
+    url: https://www.npmjs.com/package/@voquill/desktop-utils
+    install: npm install @voquill/desktop-utils
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@voquill/desktop-native-apis"
+    url: https://www.npmjs.com/package/@voquill/desktop-native-apis
+    install: npm install @voquill/desktop-native-apis
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@voquill/pricing"
+    url: https://www.npmjs.com/package/@voquill/pricing
+    install: npm install @voquill/pricing
+    official: true
+  - language: rust
+    registry: homebrew
+    name: voquill
+    url: https://github.com/voquill/homebrew-voquill
+    install: brew tap voquill/voquill && brew install voquill
+    description: Voquill CLI / app via the first-party Homebrew tap
+    official: true
+  - language: rust
+    registry: apt
+    name: voquill
+    url: https://voquill.github.io/apt/
+    install: apt install voquill (after adding the voquill.github.io/apt repo + GPG key)
+    description: First-party APT repository for Debian/Ubuntu
+    official: true
+  - language: rust
+    registry: rpm
+    name: voquill
+    url: https://github.com/voquill/rpm
+    install: dnf install voquill (after adding the first-party RPM repo)
+    description: First-party RPM repository for Fedora/RHEL
+    official: true
+  - language: shell
+    registry: github-releases
+    name: voquill (shell installer)
+    url: https://github.com/voquill/voquill/releases
+    install: curl -fsSL https://voquill.com/install.sh | sh
+    description: Released builds published to GitHub Releases; Windows via install.ps1
+    official: true

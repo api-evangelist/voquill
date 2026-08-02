@@ -1,0 +1,14 @@
+generated: '2026-07-21'
+method: searched
+description: >-
+  Provider-published agent instructions found in the Voquill open-source
+  monorepo. Voquill publishes no public developer API or OpenAPI, so no
+  API-flow skills were generated; the repository's own AGENTS.md (operating
+  instructions for AI coding agents contributing to the codebase) is captured
+  verbatim.
+skills:
+  - file: voquill-agents.md
+    name: Voquill repository agent instructions (AGENTS.md)
+    source: https://github.com/voquill/voquill/blob/main/AGENTS.md
+    api: none
+    operations: []
