@@ -50,7 +50,7 @@ tags:
 - Dictation
 - Speech-to-Text
 - Artificial Intelligence
-- Open-Source
+- Open Source
 - Healthcare
 - Pathology
 - Productivity
@@ -64,6 +64,7 @@ tags_raw:
 - Healthcare
 - Pathology
 - Productivity
+- Open-Source
 apis: []
 common:
 - type: DomainSecurity
